@@ -12,6 +12,7 @@ for _ in range(N):
 
     else:
         if hq:
-            print(heapq.heappop(hq)[1])
+            ans.append(heapq.heappop(hq)[1])
         else:
-            print(0)
+            ans.append(0)
+print('\n'.join(map(str,ans)))
